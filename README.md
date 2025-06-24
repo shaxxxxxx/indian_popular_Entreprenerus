@@ -13,7 +13,7 @@ This project is designed to:
 - **JavaScript**
 
 ## 🌐 Live Website
-🔗 [Visit the Live Site]([https://your-netlify-url.netlify.app](https://mellow-axolotl-6c7790.netlify.app))
+🔗([https://your-netlify-url.netlify.app](https://mellow-axolotl-6c7790.netlify.app))
 
 ## 📸 Preview
 <img width="1470" alt="Screenshot 2025-06-24 at 16 05 15" src="https://github.com/user-attachments/assets/ec9591a2-adf9-4742-aa54-6ffa27cc0bdd" />
