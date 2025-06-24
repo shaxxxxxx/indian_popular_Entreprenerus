@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - bhavish aggarwal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reusing the previous CSS styles here */
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://en.channeliam.com/wp-content/uploads/2025/04/Kalanithi_Maran.webp" alt="Kalanithi Maran" />
+        </div>
+        <div class="profile-basics">
+          <h2>Bhavish aggarwal</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Kalanithi Maran is a prominent Indian media baron and billionaire entrepreneur, best known as the founder and chairman of the Sun Group, one of India’s largest and most influential media conglomerates. Born on July 24, 1964, in Chennai, Tamil Nadu, he comes from a powerful political family—his father, Murasoli Maran, was a senior Union Minister, and his grand-uncle was the former Tamil Nadu Chief Minister M. Karunanidhi. After completing his B.Com from Loyola College in Chennai, Maran went on to earn an MBA from the University of Scranton in the USA. He began his media journey with a video magazine called Poomaalai in the early 1990s and launched Sun TV on April 14, 1993. What started as a regional channel soon grew into a media empire encompassing more than 30 television channels, FM radio stations (Suryan FM, Red FM), DTH services (Sun Direct), newspapers, magazines, and movie production through Sun Pictures. He also ventured into aviation by acquiring a majority stake in SpiceJet between 2010 and 2015. In the world of sports, he owns the IPL team Sunrisers Hyderabad and the SA20 team Sunrisers Eastern Cape. Under his leadership, Sun TV went public in 2006, making him one of India’s richest individuals, with an estimated net worth of over $3 billion. Known for maintaining a low public profile, Kalanithi Maran has received several awards for his business excellence and is widely regarded as one of the most powerful and influential figures in the Indian media landscape. His wife, Kavery Maran, serves as the Executive Director of Sun Group, while their daughter, Kaviya Maran, now plays an active role in the group's cricket franchises.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

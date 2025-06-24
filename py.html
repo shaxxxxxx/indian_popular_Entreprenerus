@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Arvind Kumar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reusing the previous CSS styles here */
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://via.placeholder.com/300x300?text=Arvind+Kumar" alt="Arvind Kumar" />
+        </div>
+        <div class="profile-basics">
+          <h2>Arvind Kumar</h2>
+          <p> Early Life
+            Arvind Kumar hails from a humble background in India, where he was known for his deep interest in science and public policy. His passion for technology’s role in societal transformation grew early in life.
+            
+            Education Journey
+            He holds a degree in engineering and later pursued public administration and governance, allowing him to merge technical expertise with policy-level vision.
+            
+            Business Journey
+            Arvind Kumar is known for his role in India’s digital transformation initiatives. As a senior technocrat in government and telecom sectors, he played a pivotal part in projects like Digital India, National Broadband Mission, and Data Governance policies.
+            
+            While not an entrepreneur in the conventional sense, Arvind embodies institutional entrepreneurship, driving innovation within the government to create a better digital ecosystem for startups and citizens alike.</p>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Multiple people with this name. Could refer to a senior bureaucrat in technology development. Please provide domain/company.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

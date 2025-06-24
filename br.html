@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Sandeep Kumar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="" alt="Sandeep Kumar" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Sandeep Kumar</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Sandeep Kumar grew up in Kerala, a coastal region in India known for its backwaters and water transport systems. From a young age, he was fascinated by engineering and innovation, especially around clean energy and sustainable technologies. With a deep connection to nature and a concern for the environment, he envisioned creating something impactful.
+          
+          Education Journey
+          Sandeep pursued Marine Engineering, followed by advanced studies in Renewable Energy Technologies. His academic path was a blend of engineering excellence and environmental consciousness. He also took part in various global innovation programs and sustainability workshops, which exposed him to international best practices in green tech.
+          
+          Business Journey
+          Sandeep co-founded NavAlt Solar and Electric Boats, a revolutionary company that develops solar-powered, electric boats for inland waterways. His idea was to build eco-friendly transport options to reduce diesel use in water-based transport.
+          
+          NavAlt's most iconic product is Aditya, India’s first solar ferry, which became a huge success in Kerala. The boat runs entirely on solar energy with zero pollution and minimal operating costs. It received national and international acclaim, including awards from the Government of India and the United Nations.
+          
+          Sandeep’s work has made a direct impact on reducing carbon footprints in coastal transportation and continues to inspire innovation in green mobility across India and Southeast Asia.
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

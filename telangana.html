@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Bhavish Aggarwal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://images.hindustantimes.com/img/2024/07/07/1600x900/Bhavish_Aggarwal_1714975435056_1720372992570.jpeg" alt="Bhavish Aggarwal" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Bhavish Aggarwal</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Bhavish Aggarwal was born on August 28, 1985, in Ludhiana, Punjab, into a middle-class Punjabi family. His early life was marked by curiosity and academic discipline, encouraged by his academically inclined family. Growing up, Bhavish exhibited a strong passion for computers, logic, and problem-solving—traits that would later define his entrepreneurial vision.
+
+          He was raised in an environment where education and merit were emphasized, and his parents supported his aspirations without pushing traditional expectations. Despite his humble beginnings, Bhavish was determined to create something that would change the way India looked at mobility and innovation.
+          Bhavish completed his early schooling in Ludhiana before securing admission into one of India’s most prestigious institutes—the Indian Institute of Technology (IIT) Bombay. He pursued a Bachelor’s degree in Computer Science and Engineering, graduating in 2008.
+
+At IIT Bombay, Bhavish wasn't just a high-performing student academically—he also engaged in various technical projects, research work, and internships. His problem-solving approach and exposure to cutting-edge technology during his college years played a critical role in shaping his mindset as a tech-driven entrepreneur.
+
+After graduation, he worked for Microsoft Research India, where he spent two years. During his stint, he filed two patents and published three research papers in international journals. However, the routine corporate life didn’t satisfy his urge to build something of his own.
+Bhavish’s entrepreneurial journey started in 2010, sparked by a frustrating personal experience—he had a terrible intercity cab ride that left him stranded and overcharged. This led to a realization: India lacked a reliable, technology-enabled cab service.
+
+Soon after, he co-founded Ola Cabs (now known as Ola) with his IIT Bombay batchmate Ankit Bhati. What started as a simple online cab booking service from a small office in Mumbai quickly evolved into a nationwide mobility platform. Ola’s value proposition—convenient, affordable, app-based cab bookings—resonated strongly in urban India.
+
+Key Milestones in Ola’s Growth:
+2011–2014: Rapid expansion across major Indian cities; secured Series A and B funding.
+2015 onwards: Ola introduced new services like Ola Auto, Ola Share, Ola Prime, Ola Electric, and more.
+2017: Ola entered electric mobility, aiming to tackle India’s environmental and energy challenges.
+2019: Bhavish launched Ola Electric as a separate entity focused on EVs, battery technology, and charging infrastructure.
+2021: Unveiled the Ola Futurefactory, one of the largest EV manufacturing facilities in the world, designed to be fully female-run and AI-powered.
+2022–2024: Continued R&D into electric motorcycles, batteries, and software; Ola Electric became one of India’s top EV brands.
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Bilal ahmed bhat</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://globalbusinessnetwork.in/wp-content/uploads/2017/10/Bilal-Ahmad-Bhat-3.png" alt="Bhavish Aggarwal" />
+        </div>
+        <div class="profile-basics">
+            <h2 class="name">Bilal Ahmad Bhat</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Bilal Ahmed Bhat hails from the beautiful region of Kashmir, India. Growing up in a region marked by political conflict and limited opportunities, Bilal’s journey is a story of resilience and persistence. He was driven by the need to prove that people from challenging environments can achieve greatness.
+          
+          Education Journey
+          Bilal pursued his early education in Kashmir and later enhanced his learning through various international entrepreneurship programs and business development training sessions. While not from a conventional educational background, Bilal focused on practical learning, mentorship, and networking, which proved vital in his career.
+          
+          Business Journey
+          Bilal is best known for founding the 28 Credentials of Entrepreneur (28COE), an international platform that connects entrepreneurs, mentors, and investors. His mission is to support entrepreneurship in underserved communities by providing visibility, recognition, and growth opportunities.
+          
+          He also founded Kashmir Entrepreneurship Alliance, an initiative aimed at promoting local startups and encouraging youth to explore business over unemployment or migration. Bilal has authored books and has been active in global forums discussing peace, innovation, and economic development.
+          
+          His life story has inspired many, especially those from conflict zones, showing how business can be a tool for empowerment and peace-building.
+          
+                 </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

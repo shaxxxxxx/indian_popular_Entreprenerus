@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Satyabrata Deb</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reusing the previous CSS styles here */
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://via.placeholder.com/300x300?text=Satyabrata+Deb" alt="Satyabrata Deb" />
+        </div>
+        <div class="profile-basics">
+          <h2>Satyabrata Deb</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+Born in Tripura, Satyabrata Deb showed early interest in life sciences and rural development. Despite facing infrastructural challenges, he pursued his education with dedication.
+
+Education Journey
+He earned a Ph.D. in Biotechnology and worked on agricultural genomics and organic farming systems. His education included stints in premier Indian labs and international research institutions.
+
+Business Journey
+Deb became a scientist-turned-entrepreneur, co-founding AgriGenomics Labs, which develops biofertilizers and sustainable farming solutions. His startup empowers farmers with data-driven tools and organic inputs.
+
+He also mentors agri-tech startups in Northeast India, helping bridge the gap between lab research and rural impact.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

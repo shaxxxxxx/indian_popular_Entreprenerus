@@ -1,0 +1,55 @@
+<!-- Suman Mishra -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Suman Mishra</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202312/80-1-sixteen_nine.jpg?size=1000:563" alt="Suman Mishra" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Suman Mishra</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Suman Mishra grew up in a progressive household that encouraged education and ambition. From a young age, she was known for her analytical thinking and leadership skills. She was particularly interested in business, social impact, and technology.
+          
+          Education Journey
+          Suman is a Mechanical Engineering graduate from Delhi College of Engineering, followed by an MBA from Carnegie Mellon University. She also completed leadership programs from institutes like INSEAD and Wharton, reflecting her commitment to lifelong learning.
+          
+          Business Journey
+          Suman held leadership roles at top firms like Tata Strategic Management Group, McKinsey, and Mahindra Group. In Mahindra, she led several transformation initiatives before being appointed as the CEO of Mahindra Last Mile Mobility (LMM).
+          
+          Under her leadership, LMM has focused on electric three-wheelers and small EVs, aimed at making clean mobility accessible for India's vast semi-urban and rural populations. Her strategy combines technology, affordability, and social impact, pushing India’s EV mission forward.
+          
+          She’s recognized as a role model for women in the Indian auto and mobility sectors.
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

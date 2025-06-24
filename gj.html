@@ -1,0 +1,61 @@
+<!-- Dhirubhai Ambani -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Dhirubhai Ambani</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://www.reliancegroupindia.com/documents/8354046/8354261/1-Padma-Vibhushan-Shri-Dhirubhai-Ambani.jpg" alt="Dhirubhai Ambani" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Dhirubhai Ambani</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+Dhirubhai Ambani was born on December 28, 1932, in Chorwad, a small village in Gujarat, India. He came from a modest background—his father was a schoolteacher, and the family had limited means. From a young age, Dhirubhai displayed sharp business instincts. He would buy snacks in bulk and sell them during local fairs to earn extra money.
+
+Education Journey
+Dhirubhai completed basic schooling in Gujarat but could not pursue higher education due to financial constraints. Instead, at a young age, he moved to Aden (Yemen) to work at a gas station and later at a trading firm called A. Besse & Co., where he gained exposure to business, imports/exports, and international trade.
+
+Though he lacked formal business education, he learned by observing and doing. His time abroad gave him a valuable global perspective, which many Indian entrepreneurs at the time lacked.
+
+Business Journey
+Dhirubhai returned to India in 1958 and started a small trading firm in Mumbai with his cousin. With minimal capital, he began importing polyester yarn and exporting spices. Over time, he founded Reliance Commercial Corporation, which later evolved into Reliance Industries.
+
+He entered textile manufacturing in the late 1960s and launched the "Vimal" brand, which became a household name in India. What set Dhirubhai apart was his belief in scale, vertical integration, and public funding. He made Reliance one of the first Indian companies to raise money from everyday investors through the stock market.
+
+Despite facing opposition from business rivals and scrutiny from government bodies, Dhirubhai expanded Reliance into petrochemicals, energy, telecom, and retail. His vision and risk-taking changed Indian industry forever.
+
+By the time of his death in 2002, Reliance was India’s most valuable company. He is widely regarded as the father of India’s equity culture and one of the country’s most iconic entrepreneurs.
+
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

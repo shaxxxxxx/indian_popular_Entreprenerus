@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Sonam Wangchuk</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://rmaward.asia/wp-content/uploads/2024/08/Sonam-Wangchuk-India-2.png" alt="Sonam Wangchuk" />
+        </div>
+        <div class="profile-basics">
+          <h2>Sonam Wangchuk</h2>
+          <p><strong>DOB:</strong> September 1, 1966</p>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Sonam was born in 1966 in Ladakh, a remote region of India. He didn’t attend school until the age of 9 and was largely self-taught due to the lack of infrastructure and poor education systems in the region.
+          
+          Education Journey
+          After schooling, he pursued mechanical engineering at NIT Srinagar. Later, he studied architecture at École de Technologie Supérieure in Canada to focus on sustainable and context-specific education.
+          
+          Business Journey
+          Sonam founded the Students' Educational and Cultural Movement of Ladakh (SECMOL), reforming local education by making it practical, nature-aligned, and language-accessible.
+          
+          He also invented the Ice Stupa, a glacier-like structure to combat water scarcity in the Himalayas. His work blends science, sustainability, and education, and inspired the character of Phunsukh Wangdu in the movie 3 Idiots.
+          
+          His impact continues through HIAL (Himalayan Institute of Alternatives), where he nurtures thinkers and doers for a better world.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

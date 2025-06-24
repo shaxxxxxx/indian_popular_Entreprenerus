@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - zubair ahmed </title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://via.placeholder.com/400x400.png?text=Bhavish+Aggarwal" alt="Bhavish Aggarwal" />
+        </div>
+        <div class="profile-basics">
+            <h2 class="name">Zubair Ahmad</h2>
+           
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Zubair Ahmad was born in Tamil Nadu, India. He came from a humble background, and like many first-generation entrepreneurs, had to work his way up from the bottom. Growing up, he witnessed the inefficiencies in India’s supply chain and logistics industry, which later influenced his entrepreneurial path.
+          
+          Education Journey
+          Zubair completed his education in Logistics and Supply Chain Management, which provided him with both academic knowledge and industry insight. He also worked with logistics firms early in his career, gaining hands-on experience.
+          
+          Business Journey
+          Zubair founded Daily Logistics, a startup that focuses on making freight forwarding and logistics more efficient using tech-driven solutions. His company aims to improve real-time tracking, warehousing, and transportation processes for businesses.
+          
+          Starting with a small team, he built Daily Logistics into a trusted partner for many industries like manufacturing, e-commerce, and food delivery. Zubair focused on customer service, transparency, and innovation, which set his business apart.
+          
+          He is an active mentor and speaker in startup circles and encourages youth to solve real-world problems through entrepreneurship.
+          
+            </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

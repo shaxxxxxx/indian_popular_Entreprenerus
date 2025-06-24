@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Sachin Bansal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Waypoints library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <!-- Entrepreneur Profile Section -->
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Sachin_Bansal_SB.jpg" alt="Sachin Bansal" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Sachin Bansal</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Sachin Bansal was born in 1981 in Chandigarh. He came from a family with an engineering background—his father was in business and his mother was a homemaker. He developed a deep interest in computers and problem-solving at an early age.
+          
+          Education Journey
+          He graduated from the Indian Institute of Technology (IIT) Delhi in 2005 with a degree in Computer Science. While at IIT, he developed strong programming and analytical skills, preparing him for a career in technology and entrepreneurship.
+          
+          Business Journey
+          Sachin began his career at Techspan, then joined Amazon as a software engineer. In 2007, along with Binny Bansal, he launched Flipkart, initially as an online bookstore.
+          
+          Flipkart quickly scaled into a full-fledged e-commerce platform, pioneering online shopping in India. It revolutionized logistics, cash-on-delivery, and customer trust in e-commerce. Sachin served as CEO and later Executive Chairman before stepping down in 2018.
+          
+          Under his leadership, Flipkart became India’s largest online retailer and was eventually acquired by Walmart for $16 billion—the largest e-commerce deal in history at the time.
+          
+          After exiting Flipkart, he founded Navi Technologies, focusing on fintech, lending, and insurance, continuing his passion for tech-driven disruption.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

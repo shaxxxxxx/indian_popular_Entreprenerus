@@ -1,0 +1,53 @@
+<!-- Gopi Kallayil -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Gopi Kallayil</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://genconnectu.com/wp-content/uploads/2021/11/Gopi-1.png" alt="Gopi Kallayil" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Gopi Kallayil</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+Gopi Kallayil hails from a small village in Kerala, India. He grew up in a home with no electricity or running water but had parents who deeply valued education. His journey from rural India to Silicon Valley is often cited as a story of resilience and ambition.
+
+Education Journey
+He earned his engineering degree from NIT Calicut, followed by an MBA from Wharton School, University of Pennsylvania. He also studied at Stanford University, immersing himself in the entrepreneurial and innovative culture of Silicon Valley.
+
+Business Journey
+Gopi began his career in marketing and product strategy and eventually joined Google, where he has led marketing for products like Google+, Chrome, and Android. Today, he serves as Chief Evangelist, Brand Marketing at Google, where he helps bridge the gap between innovation and humanity.
+
+He’s also a TEDx speaker, author, and yoga practitioner, blending mindfulness with high-performance corporate life. His books like “The Internet to the Inner-net” have inspired professionals to embrace both technology and inner growth.
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

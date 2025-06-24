@@ -1,0 +1,59 @@
+<!-- Raman Chhib -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Raman Chhib</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoUMV3RS7pOuSgEK3DudrLUWshCbRol8m8RA&s" alt="Raman Chhib" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Raman Chhib</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+         Early Life
+Raman Chhib was born in Punjab, India, in a middle-class family deeply rooted in education. Growing up, he was observant of the flaws in traditional schooling systems, especially in rural areas where access and quality were lacking. This inspired him to eventually work in the space of educational reform.
+
+Education Journey
+Raman pursued Engineering and later completed an MBA with a focus on education and social impact. However, much of his understanding of how to drive change came from grassroots-level involvement in teaching, volunteering, and community work.
+
+He spent years working directly with schools, NGOs, and educators to understand real problems faced by both students and teachers.
+
+Business Journey
+Raman founded an education-based social venture aimed at improving teaching methods, school environments, and child learning outcomes in underserved areas. His approach combined technology, teacher training, and curriculum reform.
+
+His startup developed a platform that enabled real-time teacher support, peer learning, and personalized curriculum delivery in government schools. Over time, it was adopted by various state departments and NGOs.
+
+Raman's efforts received recognition from national education forums, and he has become a mentor to young social entrepreneurs in India. His mission continues to be transforming India’s education system from the ground up.
+
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

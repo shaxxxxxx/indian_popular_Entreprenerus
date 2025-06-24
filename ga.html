@@ -1,0 +1,55 @@
+<!-- Faye D’Souza -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Faye D’Souza</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://pbs.twimg.com/profile_images/1392346002435166208/lYUgLOk4_400x400.jpg" alt="Faye D’Souza" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Faye D’Souza</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Faye D’Souza was born and raised in Mangalore, Karnataka. From a young age, she was outspoken, curious, and passionate about justice and truth. She admired journalists and saw media as a powerful tool to hold power accountable and bring light to public issues.
+          
+          Education Journey
+          Faye earned her Bachelor’s degree in Journalism from Mount Carmel College, Bangalore, and then pursued a Master’s in Mass Communication from Commits Institute of Journalism and Mass Communication. She also trained under top news editors and developed a sharp editorial voice.
+          
+          Business Journey
+          Faye started her career in journalism with CNBC-TV18, covering personal finance and consumer rights. She later joined Times Network and rose to fame as the anchor of Mirror Now’s 'The Urban Debate', where she fearlessly addressed social and political issues.
+          
+          Her bold, no-nonsense style and focus on citizen-centric journalism earned her a loyal following. In 2019, she resigned from Mirror Now under controversial circumstances, which many speculated involved political pressure.
+          
+          In response, she launched her independent media platform "Beatroot News", focused on fact-based, ad-free, viewer-funded journalism. Through this, she is championing the cause of free press in the digital age, empowering audiences to access truth without noise.
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

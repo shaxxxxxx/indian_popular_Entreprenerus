@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Lalnunmawia</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://ourneta.com/wp-content/uploads/2020/09/Dr.-F.-Lalnunmawia-768x512.jpg" alt="Lalnunmawia" />
+        </div>
+        <div class="profile-basics">
+          <h2>Lalnunmawia</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Lalnunmawia was born in Mizoram, a northeastern state of India rich in biodiversity. Fascinated by plants and ecosystems from a young age, he decided to pursue a path in botany and environmental sciences.
+          
+          Education Journey
+          He earned his PhD in Botany and conducted extensive research in ethnobotany and biodiversity. He studied both in India and abroad, participating in numerous fieldwork programs and academic exchanges.
+          
+          Business Journey
+          While Lalnunmawia is primarily an academic, he has also contributed to eco-entrepreneurship and community education. He has launched initiatives to train farmers, educate students, and document medicinal plants for sustainable use.
+          
+          As a member of the Mizoram Biodiversity Board, he played a critical role in policy-making, conservation, and public awareness. He’s also been involved in local governance and education reforms to promote science-backed entrepreneurship in rural communities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

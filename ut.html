@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Sanjay Agarwal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reusing the previous CSS styles here */
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://via.placeholder.com/300x300?text=Sanjay+Agarwal" alt="Sanjay Agarwal" />
+        </div>
+        <div class="profile-basics">
+          <h2>Sanjay Agarwal</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+Sanjay was born in Jaipur, Rajasthan. From early on, he showed an interest in finance and economics, particularly in empowering small businesses.
+
+Education Journey
+He is a Chartered Accountant, ranked among the top scorers in his batch. His education gave him deep insights into financial systems, lending, and compliance.
+
+Business Journey
+He founded AU Financiers in 1996 to provide vehicle loans to underserved populations. Over two decades, the company transformed into AU Small Finance Bank, one of India’s most successful transitions from an NBFC to a bank.
+
+Sanjay focused on financial inclusion, building trust among rural and semi-urban customers. Today, AU Bank serves millions with digital banking, loans, and insurance, and is publicly listed with strong performance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

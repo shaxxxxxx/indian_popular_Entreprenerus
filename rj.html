@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Kiran Mazumdar-Shaw</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+   
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AIdro_mIzF6eZmpeQ-40R6UVoibmj74gNWNlQgQFT53jCCFXv2M=s900-c-k-c0x00ffffff-no-rj" alt="Kiran Mazumdar-Shaw" />
+        </div>
+        <div class="profile-basics">
+          <h2>Kiran Mazumdar-Shaw</h2>
+        </div>
+        
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Born in 1953 in Bangalore, Kiran was raised in a progressive family that encouraged education. Her father was a brewmaster, and she initially wanted to follow in his footsteps.
+          
+          Education Journey
+          She graduated in Zoology from Bangalore University and later pursued brewing science in Australia—becoming the first woman to qualify as a brewmaster in India.
+          
+          Business Journey
+          In 1978, with just ₹10,000 in her garage, Kiran founded Biocon to manufacture enzymes. At the time, biotechnology was practically unknown in India, and she faced skepticism for being a woman in a male-dominated industry.
+          
+          Through relentless innovation, global collaborations, and R&D, Biocon grew into a biopharmaceutical giant. Kiran became a pioneer in affordable insulin, cancer, and auto-immune treatments. She is now one of India’s richest self-made women and an advocate for STEM education, innovation, and healthcare accessibility.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

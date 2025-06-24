@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - nabam Tade</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Waypoints library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <!-- Entrepreneur Profile Section -->
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://myneta.info/images_candidate/mynetai_ews5ArunachalPradesh2024/c6bec131e4e7e00d67673c715664b88146d4f813.jpg" alt="nabam Tade" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Mama Natung</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+            Known for: Founder of Skyone Airways, the first private airline in Arunachal
+
+            Born in a small village in Arunachal Pradesh
+            
+            Education: Local schooling, aviation training abroad
+            
+            A pioneer in aviation for North-East India
+            
+            Aimed to improve connectivity in difficult terrains
+            
+            Known for entrepreneurial courage in a risk-averse region
+            
+            Advocated for sustainable tourism and better infrastructure
+            
+            Supports local employment in aviation and tourism
+            
+            Faces ongoing challenges due to tough geography
+            
+            Symbol of hope for budding entrepreneurs in the state
+            
+            
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

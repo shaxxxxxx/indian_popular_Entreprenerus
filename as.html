@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - ritesh agarwal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://imageio.forbes.com/i-forbesimg/media/lists/people/ritesh-agarwal_416x416.jpg?format=jpg&height=416&width=416&fit=bounds" alt="Ritesh agarwal" />
+        </div>
+        <div class="profile-basics">
+            <h2 class="name">Ritesh agarwal</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Bhavish Aggarwal was born on August 28, 1985, in Ludhiana, Punjab, India. Raised in a middle-class family, his father was a doctor, and his upbringing was rooted in values of education, discipline, and ambition. Even in his early years, Bhavish showed curiosity about technology and innovation. While he wasn’t from a business family, he developed an entrepreneurial mindset during his college years.
+          
+          Education Journey
+          Bhavish pursued a Bachelor’s degree in Computer Science and Engineering from the Indian Institute of Technology (IIT) Bombay, one of India’s most prestigious engineering institutions. During his time at IIT, he was known to be academically strong and highly driven. He interned at Microsoft Research in Bangalore and later joined Microsoft India after graduation in 2008, where he worked for two years and filed two patents.
+          
+          Business Journey
+          Bhavish’s entrepreneurial journey began with a blog called "Desi Traveler" and a startup idea to create a holiday and weekend trip planner. While running this travel startup, he once rented a car for a road trip and had a terrible experience. That incident sparked the idea for Ola Cabs.
+          
+          In 2010, along with his co-founder Ankit Bhati, he started Ola in Mumbai with limited funds. They began by connecting passengers to cab drivers through a mobile app—something innovative at the time in India. What began as a simple solution to a personal problem soon turned into a large-scale mobility platform.
+          
+          Bhavish faced major hurdles like lack of capital, competition from global players like Uber, and skepticism about tech-enabled cab services. But Ola scaled quickly due to its user-friendly interface, aggressive expansion, and localized approach.
+          
+          Under his leadership, Ola expanded to more than 250 cities, served millions of users, and even diversified into Ola Electric, with a focus on electric mobility and sustainable transport. Bhavish is widely respected as one of India’s youngest and most dynamic entrepreneurs.  </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

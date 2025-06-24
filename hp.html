@@ -1,0 +1,55 @@
+<!-- Pranav Sharma -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Pranav Sharma</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpgEFl8IL0mMvh18GEcGRBE2uJxaoP00f84g&s" alt="Pranav Sharma" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Pranav Sharma</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+Pranav Sharma was born in India and developed an early fascination with the night sky, stories of space exploration, and science communication. While most kids dreamed of being astronauts, Pranav was drawn to the stories behind the missions—the scientists, the policies, and the cultural narratives. His passion grew with time and became the foundation of his unique career.
+
+Education Journey
+He holds degrees in physics, astronomy, and history of science. His academic focus bridged the gap between science and storytelling. He also pursued specialized training in science communication and public policy, which allowed him to work at the intersection of space history, education, and diplomacy.
+
+Business Journey
+Pranav Sharma is best known for curating India’s first exhibition on space diplomacy and playing a key role in the Indian Space Research Organisation’s (ISRO) historical documentation. He became the curator of the Space Museum at Hyderabad, and his work has involved deep collaboration with space agencies, embassies, and international science bodies.
+
+He founded initiatives aimed at popularizing science among students and policymakers, and his writing, lectures, and public talks have been featured across global platforms. Through exhibitions, policy advocacy, and media, Pranav is creating a new wave of interest in India's space legacy.
+
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

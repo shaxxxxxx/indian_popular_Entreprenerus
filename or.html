@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Bijay Panda</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reusing the previous CSS styles here */
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://via.placeholder.com/300x300?text=Bijay+panda" alt="Bijay panda" />
+        </div>
+        <div class="profile-basics">
+          <h2>Bijay panda</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Bijay panda grew up in Assam and always displayed entrepreneurial instincts—selling items at school events and initiating community service projects. He had a strong desire to solve real-world problems through innovative thinking.
+          
+          Education Journey
+          He pursued a degree in Business Administration and actively participated in entrepreneurship cells and startup events. He also underwent accelerator programs focused on youth-led ventures and digital innovation.
+          
+          Business Journey
+          Bijay founded Northeast Connect, a startup that links local producers and artisans from the Northeast to larger Indian and international markets. His platform helps tribal farmers, bamboo artisans, and weavers get fair prices and consistent demand.
+          
+          He’s been recognized by youth forums and startup summits for his efforts in inclusive entrepreneurship, creating a model that blends technology, rural impact, and scalability.
+          
+          
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

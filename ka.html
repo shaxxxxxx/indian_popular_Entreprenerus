@@ -1,0 +1,56 @@
+<!-- Narayana Murthy -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Narayana Murthy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnz3mrCv2wln6lMeP4nEe7tmM43nMqUmpfZA&s" alt="Narayana Murthy" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Narayana Murthy</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Born in 1946 in Mysore, Karnataka, Narayana Murthy was raised in a middle-class family. His father was a schoolteacher, and Murthy excelled academically from a young age. Despite modest means, he had big dreams and deep moral convictions.
+
+Education Journey
+He completed his Bachelor's in Electrical Engineering from National Institute of Engineering, Mysore, and went on to pursue M.Tech in Computer Science from IIT Kanpur. At IIT, he was exposed to early computing systems, which shaped his passion for software.
+
+Business Journey
+After working abroad for a few years, Murthy returned to India with a dream to build a company that stood for transparency, global quality, and ethical values. In 1981, with just ₹10,000 borrowed from his wife, he co-founded Infosys with six colleagues.
+
+Murthy introduced employee stock ownership plans (ESOPs) in India and led Infosys to become a global IT giant with clients across North America and Europe. Infosys set benchmarks in corporate governance, client delivery, and Indian IT branding.
+
+He stepped down as CEO in 2002 but remained an active mentor. Under his leadership, Infosys became the first Indian company to be listed on NASDAQ and became synonymous with Indian software excellence.
+
+He is widely regarded as the father of the Indian IT revolution, and his influence on Indian business ethics and corporate leadership is profound.
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

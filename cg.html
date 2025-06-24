@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Naveen Jindal </title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://via.placeholder.com/400x400.png?text=Bhavish+Aggarwal" alt="Bhavish Aggarwal" />
+        </div>
+        <div class="profile-basics">
+            <h2 class="name">Naveen jindal</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+            Early Life
+            Naveen Jindal was born on March 9, 1970, in Hisar, Haryana, into the illustrious Jindal family. His father, Om Prakash Jindal, was a prominent industrialist and the founder of the Jindal Group, which had diverse interests in steel, power, mining, and infrastructure. Growing up in such an environment instilled in Naveen a deep understanding of business and a drive to contribute meaningfully to India's industrial sector.​
+            
+            Educational Journey
+            Naveen pursued his undergraduate studies in Commerce at Hansraj College, University of Delhi. Eager to broaden his horizons, he then moved to the United States to earn an MBA from the University of Texas at Dallas. During his time abroad, he developed a keen interest in public policy and governance, which later influenced his foray into politics.​
+            
+            Business Journey
+            Upon returning to India, Naveen took the helm of Jindal Steel and Power Limited (JSPL), focusing on expanding its operations and modernizing its facilities. Under his leadership, JSPL established one of its largest and most advanced steel plants in Raigarh, Chhattisgarh, positioning the state as a significant player in India's steel production landscape.​
+            NIIR Project Consultancy Services
+            
+            Beyond steel manufacturing, Naveen emphasized sustainable practices, investing in energy-efficient technologies and community development initiatives around JSPL's operational areas. His vision transformed JSPL into a diversified conglomerate with interests spanning steel, power generation, mining, and infrastructure.​
+            
+            Naveen Jindal's journey exemplifies the impact of visionary leadership in industrial growth and regional development. His contributions have not only bolstered Chhattisgarh's economy but have also set benchmarks in corporate responsibility and sustainable industrial practices.
+          
+            </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

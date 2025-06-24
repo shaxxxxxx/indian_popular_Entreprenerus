@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Sundar Pichai</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reusing the previous CSS styles here */
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://assets.entrepreneur.com/content/3x2/2000/1623331196-812881-sundar-pichai-4542.jpg?format=pjeg&auto=webp&crop=1:1" alt="Sundar Pichai" />
+        </div>
+        <div class="profile-basics">
+          <h2>Sundar Pichai</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+Born in Chennai in 1972, Sundar Pichai grew up in a modest two-room apartment. His father was an electrical engineer, and Pichai was introduced to technology through family discussions and his first rotary phone.
+
+Education Journey
+He studied Metallurgical Engineering at IIT Kharagpur, where he was awarded a silver medal. He later earned a Master’s in Material Sciences from Stanford and an MBA from Wharton, where he was a Siebel Scholar.
+
+Business Journey
+He joined Google in 2004 as a product manager and soon became instrumental in the development of Google Toolbar and Chrome, which changed the way people accessed the web.
+
+Over the years, he climbed ranks, managing Android, Chrome OS, and Google Apps. In 2015, he became CEO of Google, and in 2019, CEO of Alphabet Inc.
+
+Pichai is known for his humility, clarity, and user-first vision. Under his leadership, Google has grown into a global AI, cloud, and hardware powerhouse.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

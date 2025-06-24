@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Nav Bhatia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reusing the previous CSS styles here */
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJIzri-2ZZ-s1c3PNt4AAYqg9XvlcHlmHWw&s" alt="Nav Bhatia" />
+        </div>
+        <div class="profile-basics">
+          <h2>Nav Bhatia</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Nav Bhatia was born in Delhi and migrated to Canada during the anti-Sikh riots in 1984. Facing discrimination and financial instability, he worked tirelessly to rebuild his life. Despite being highly qualified as an engineer, he struggled to find work in his field due to racial bias.
+          
+          Education Journey
+          He graduated with a degree in Mechanical Engineering in India. However, his real education came through the challenges he faced in Canada—adapting, persevering, and building relationships.
+          
+          Business Journey
+          Nav took a job as a car salesman and soon became the top-performing employee in Canada. Eventually, he bought Hyundai dealerships and turned them into the most successful in the country. His empire now includes multiple high-performing dealerships and philanthropic initiatives.
+          
+          Outside of business, he is the most famous Toronto Raptors fan, known as the “Superfan.” He uses his platform to advocate for inclusion, anti-racism, and youth empowerment. He also founded the Nav Bhatia Superfan Foundation, which supports underprivileged children globally.
+          
+          
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

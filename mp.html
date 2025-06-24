@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Rahul Jain</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8xKzulefm0dnfr8FEaTJdnEaI4PUs4887w&s" alt="Rahul Jain" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Rahul Jain</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">Early Life
+          Early Life
+          Rahul Jain was born into a middle-class family in India and showed a deep curiosity for systems, business processes, and behavioral economics from a young age. He was analytical and had a knack for simplifying complex ideas, which later shaped his approach to entrepreneurship and coaching.
+          
+          Education Journey
+          He earned his engineering degree followed by an MBA in International Business. His education focused not only on academic excellence but also on understanding the real-world challenges of SMEs and startups.
+          
+          Business Journey
+          Rahul is the founder of Bizwiz, a platform dedicated to helping small and medium-sized businesses scale using structured systems and processes. He’s one of the pioneers in business coaching in India and has trained over 25,000 entrepreneurs.
+          
+          Through his signature programs and workshops, he emphasizes the power of automation, delegation, and mindset transformation. Rahul advocates for system-driven businesses instead of people-dependent ones, empowering founders to achieve growth without burnout..</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

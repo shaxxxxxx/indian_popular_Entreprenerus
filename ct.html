@@ -1,0 +1,59 @@
+<!-- Amit Agarwal -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Amit Agarwal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="" alt="Amit Agarwal" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Amit Agarwal</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Amit Agarwal grew up in Mumbai, India, in a family that valued academic excellence and discipline. From a young age, he was drawn to math, technology, and systems thinking. He always dreamt of working on global problems and building something meaningful in the tech world.
+          
+          Education Journey
+          Amit did his Bachelor's in Computer Science from IIT Kanpur, one of the premier engineering institutions in India. He later pursued a Master’s in Computer Science from Stanford University, USA. At Stanford, he was exposed to Silicon Valley’s innovative culture and startup ecosystem.
+          
+          Business Journey
+          Amit joined Amazon in the U.S. in 1999, where he played a critical role in developing scalable technology for Amazon’s e-commerce platform. Over the years, he rose through the ranks, becoming one of Jeff Bezos' key executives.
+          
+          In 2013, he was chosen to lead Amazon’s entry into India—a challenging market with tough competition from Flipkart and deep logistical challenges. Under Amit's leadership, Amazon India grew rapidly, investing billions of dollars into infrastructure, local seller networks, and innovative services like Prime, Pantry, and Easy Ship.
+          
+          Amit’s strategy focused on "India-first innovation", which meant adapting products and services to Indian consumers, such as cash on delivery, vernacular language support, and kirana partnerships.
+          
+          He is now recognized as a global leader in e-commerce and one of the most influential tech executives from India.
+          
+          
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

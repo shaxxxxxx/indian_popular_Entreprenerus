@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Vineet Rai</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <!-- No image found for Vineet Rai, using placeholder -->
+          <img src="https://idronline.org/wp-content/uploads/2020/12/Vineet-Rai-Author-Image-e1574152899440.jpg.webp" alt="Vineet Rai" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Vineet Rai</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Vineet Rai was born in a small town in Rajasthan, India. He grew up with modest means and had limited exposure to the world of finance or entrepreneurship. However, he was deeply aware of the inequalities in Indian society, especially in rural and underserved areas. These early observations played a big role in shaping his future.
+          
+          Education Journey
+          Vineet completed his education in Forestry from the Indian Institute of Forest Management (IIFM), Bhopal. Unlike typical business leaders, he didn’t come from a commerce or engineering background. Instead, his grounding was in development, natural resources, and rural policy—which later helped him understand the grassroots needs of India.
+          
+          Business Journey
+          Vineet Rai's career began in government and development sectors. He worked at the Gujarat government’s Grassroots Innovation Augmentation Network, where he interacted closely with innovators in villages. He realized that although rural entrepreneurs had ideas and passion, they lacked access to capital.
+          
+          This gap inspired him to launch Aavishkaar in 2001—a pioneering impact investment firm. His goal was to support businesses that generated both social impact and financial returns. At a time when venture capital was largely focused on big cities and tech, Vineet took a bold step in funding small enterprises in remote parts of India.
+          
+          Aavishkaar gradually grew into the Aavishkaar Group, managing over $1 billion in assets, investing in areas like agriculture, health, education, and clean energy. His work proved that doing good and building sustainable businesses can go hand-in-hand.
+          
+          Vineet is now a globally respected figure in impact investing, often featured in platforms like the World Economic Forum and G20 summits.     </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

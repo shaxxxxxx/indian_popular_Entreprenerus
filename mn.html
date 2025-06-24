@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Entrepreneur Profile - Binesh Thokchom</title>...</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+<header class="navbar">...</header>
+<section class="entrepreneur-profile">
+  <div class="profile-container" id="profile">
+    <div class="profile-left">
+      <div class="profile-image"><img src="https://classicin.com/assets/img/about-us/v-reddy.png" alt="Binesh Thokchom" /></div>
+      <div class="profile-basics">
+        <h2 class="name">Binesh Thokchom</h2>
+      </div>
+    </div>
+    <div class="profile-info">
+      <p class="bio">Early Life
+        Binesh Thokchom hails from Manipur, a region with limited tech infrastructure but abundant talent. From a young age, he was interested in design, IT, and innovation, despite facing challenges due to lack of resources and exposure.
+        
+        Education Journey
+        Binesh pursued computer applications and honed his skills through hands-on projects and self-learning. He was deeply influenced by the rise of the internet and mobile technology during his college years.
+        
+        Business Journey
+        He founded Globizs Web Solutions in Imphal, aiming to provide digital transformation solutions for businesses in Northeast India. His company offers services like web development, digital marketing, e-commerce solutions, and software development.
+        
+        Binesh is credited with bringing tech awareness and entrepreneurship to Manipur, offering young professionals a chance to work in the digital space without migrating to bigger cities. His startup has served over 1,000 clients globally, making him one of the prominent tech entrepreneurs from the Northeast.</p>
+    </div>
+  </div>
+</section>
+<script>
+  new Waypoint({
+    element: document.getElementById('profile'),
+    handler: function () {
+      document.getElementById('profile').classList.add('in-view');
+    },
+    offset: '75%'
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Sanjay Giri</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* same styling as earlier (omitted here for brevity, assume reused) */
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://yt3.googleusercontent.com/GiuytuXtR83AUUl9QNfsn6--iCC89r2crxIb809-MmKvpR_6S2LDIJ6JSmJEpOUm7ftxMeVCcg=s900-c-k-c0x00ffffff-no-rj" alt="Sanjay Giri" />
+        </div>
+        <div class="profile-basics">
+          <h2>Sanjay Giri</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Sanjay Giri grew up in Odisha, India, where he developed a strong connection to his roots and regional culture. His early interest was in art, storytelling, and tribal heritage, which shaped his later initiatives.
+          
+          Education Journey
+          He pursued a degree in Mass Communication and Design, followed by studies in marketing and branding. His education combined creative thinking with business acumen.
+          
+          Business Journey
+          Sanjay founded Odishay, a platform that promotes Odisha's tribal crafts, textiles, and art through e-commerce and exhibitions. He has created a bridge between traditional artisans and modern markets.
+          
+          Through community engagement and sustainable practices, Odishay empowers tribal artisans, especially women, to become economically independent. His work has also received recognition for preserving intangible cultural heritage while promoting entrepreneurship.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

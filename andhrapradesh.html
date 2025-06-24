@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Nara lokesh naidu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Waypoints library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <!-- Entrepreneur Profile Section -->
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202312/nara-lokesh-200705207-3x4.jpg?VersionId=Zg7iIZ9j2TqviWbRWjr7a0KXsPATabhj" alt="Nara lokesh naidu" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Nara lokesh naidu</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Nara Lokesh Naidu is an Indian politician and a key member of the Telugu Desam Party (TDP), a regional political party in the state of Andhra Pradesh. He is best known as the son of N. Chandrababu Naidu, the former Chief Minister of Andhra Pradesh and a prominent political figure in South India. Despite being born into a powerful political family, Nara Lokesh has carved his own path in public service, especially in the areas of technology, youth engagement, and administrative reforms.
+
+Born on January 23, 1983, in Hyderabad, Lokesh pursued his education from some of the most prestigious institutions in the world. He holds a Bachelor’s degree in Management Information Systems from Carnegie Mellon University and an MBA from Stanford University. His global education gave him a modern and technologically-driven perspective on governance, which he later applied in his political career.
+
+Lokesh officially entered politics in 2013 and quickly rose through the ranks of the TDP. He was appointed as the General Secretary of the party and played a significant role in strengthening the party’s digital infrastructure. His innovative use of data analytics, digital campaigns, and grassroots engagement helped modernize the party’s approach to elections and public relations.
+
+In 2017, he was inducted into the Andhra Pradesh state cabinet as the Minister for Information Technology, Panchayati Raj, and Rural Development. During his tenure, Lokesh focused on digital governance, smart village initiatives, rural employment, and sanitation. His leadership in bringing transparency through digital services, especially in rural governance, earned him recognition.
+
+Nara Lokesh is particularly known for:
+
+Promoting e-governance and digital transformation in rural and urban administration.
+Smart Village-Smart Ward programme, aimed at improving the quality of life in villages through digital services, cleanliness, and infrastructure.
+Connecting youth with governance and job opportunities via skill development and technology platforms.
+Despite facing criticism and political opposition, Lokesh remains a significant youth leader in Andhra Pradesh politics. His emphasis on technology, administrative efficiency, and clean governance positions him as a modern face of Indian regional politics.
+
+In conclusion, Nara Lokesh Naidu symbolizes the new generation of Indian politicians who blend traditional politics with modern technology and global education. With a vision focused on digital empowerment and grassroots development, he continues to play an influential role in shaping the future of Andhra Pradesh.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

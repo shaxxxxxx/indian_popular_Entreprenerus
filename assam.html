@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Ritesh Agarwal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Waypoints library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <!-- Entrepreneur Profile Section -->
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://kuvera.in/blog/wp-content/uploads/2024/09/data-sciences-tech-need-to-be-given-due-importance-in-every-industry-ritesh-agarwal-1024x768.webp" alt="Ritesh Agarwal" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Ritesh Agarwal</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+            Born: November 16, 1993, in Bissam Cuttack, Odisha; raised in Rayagada, close to Assam
+
+            Technically not born in Assam but spent early business time in Northeast India
+            
+            Education: Dropped out of college, received Thiel Fellowship
+            
+            Company: Founder & CEO of OYO Rooms (founded 2013)
+            
+            Started by renting budget rooms and standardizing them
+            
+            Transformed hospitality industry in India
+            
+            OYO operates in over 80 countries
+            
+            Recognized by Forbes 30 Under 30
+            
+            Became one of the youngest self-made billionaires in India
+            
+            Focused on affordable and quality lodging for middle-class travelers
+            
+            
+            
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Neichu Zimu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reusing the previous CSS styles here */
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="https://via.placeholder.com/300x300?text=Neichu+Zimu" alt="Neichu Zimu" />
+        </div>
+        <div class="profile-basics">
+          <h2>Neichu Zimu</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+          Neichü Zimu was raised in Nagaland, where traditional values and modern aspirations shaped her worldview. She had a strong desire to empower women and indigenous communities and was actively involved in student organizations during her school years.
+          
+          Education Journey
+          She pursued higher studies in Social Work and Development Studies, equipping her with tools to understand and improve rural livelihoods. She also attended various leadership programs focused on community building and entrepreneurship.
+          
+          Business Journey
+          Neichü founded Weaving Hope, a social enterprise that provides employment to women weavers in Nagaland by promoting local textiles in national and international markets.
+          
+          Her work is rooted in sustainability, fair trade, and cultural preservation. Through her leadership, hundreds of women have gained financial independence, and traditional Naga textiles have found new appreciation in global fashion circuits.
+          
+          
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        this.element.classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>

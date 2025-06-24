@@ -1,0 +1,57 @@
+<!-- Ritesh Agarwal -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrepreneur Profile - Ritesh Agarwal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">StartUpIndia</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="nav-links" id="nav-links"></nav>
+  </header>
+  <section class="entrepreneur-profile">
+    <div class="profile-container" id="profile">
+      <div class="profile-left">
+        <div class="profile-image">
+          <img src="" alt="Ritesh Agarwal" />
+        </div>
+        <div class="profile-basics">
+          <h2 class="name">Ritesh Agarwal</h2>
+        </div>
+      </div>
+      <div class="profile-info">
+        <p class="bio">
+          Early Life
+Born in Rayagada, Odisha, in 1993, Ritesh Agarwal came from a modest Marwari business family. From a young age, he was tech-savvy and entrepreneurial. At just 13, he started selling SIM cards and later built an interest in coding and travel.
+
+Education Journey
+Ritesh was selected for the Thiel Fellowship (a $100,000 grant by PayPal founder Peter Thiel for young entrepreneurs), which led him to drop out of college. Before that, he briefly studied at Indian School of Business and Finance, Delhi. Most of his learning came through online courses, self-teaching, and global exposure during the fellowship.
+
+Business Journey
+At just 17, Ritesh launched Oravel Stays, a platform for budget accommodation. This evolved into OYO Rooms, which standardized and branded budget hotels across India.
+
+He identified a major gap in affordable, predictable hotel experiences and built a tech platform to fix it. OYO quickly expanded across India and later entered China, Southeast Asia, Europe, and the US. It became one of India's most valuable startups, and Ritesh became the youngest self-made billionaire in India.
+
+Despite facing challenges such as over-expansion, funding slowdowns, and hotel partner conflicts, Ritesh remained committed to restructuring and stabilizing the company. Today, OYO is recognized globally for transforming the budget hospitality industry.
+          
+          
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Waypoint({
+      element: document.getElementById('profile'),
+      handler: function () {
+        document.getElementById('profile').classList.add('in-view');
+      },
+      offset: '75%'
+    });
+  </script>
+</body>
+</html>
