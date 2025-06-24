@@ -1,4 +1,3 @@
-<img width="1470" alt="Screenshot 2025-06-24 at 16 05 36" src="https://github.com/user-attachments/assets/a3f0da10-4e68-4f50-9222-947c1ee85f05" />
 #🌟 Entrepreneur Showcase Website
 A sleek and responsive web-based platform to highlight and explore the journeys of notable entrepreneurs across various industries.
 
